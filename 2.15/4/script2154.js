@@ -4,5 +4,5 @@ function pow(number, degree) {
   }
   return "Неверная степень";
 }
-let result = pow(2, 0);
+let result = pow(5, 1);
 console.log(result);
