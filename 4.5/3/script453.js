@@ -21,7 +21,7 @@ function Accumulator(startingValue) {
   this.value = startingValue;
 
   this.read = function () {
-    this.value += +prompt("Сколько прибавить?", 0);//плюс перед промтом чтобы складывал значения
+    this.value += +prompt("Сколько прибавить?", 0);//+ - это приведение строки к числу
   };
 }
 

@@ -15,16 +15,16 @@ alert( calculator.mul() ); */
 
 let calculator = {
   read() {
-    chislo_1 = +prompt("Введите chislo_1?", "");
-    chislo_2 = +prompt("Введите chislo_2?", "");
+    number1 = +prompt("Введите number1?", "");
+    number2 = +prompt("Введите number2?", "");
   },
 
   sum() {
-    return chislo_1 + chislo_2;
+    return number1 + number2;
   },
 
   mul() {
-    return chislo_1 * chislo_2;
+    return number1 * number2;
   },
 };
 //тесты в https://plnkr.co/edit/8dD0zQy1BDTcwoJ3?p=preview&preview
