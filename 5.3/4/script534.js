@@ -10,7 +10,7 @@ alert( extractCurrencyValue('$120') === 120 ); // true
 */
 
 function extractCurrencyValue(str) {
-  let num = '';
+let num = '';
 
   for (let symbol of str) {
     num += isFinite(symbol) ? symbol : '';
@@ -20,4 +20,4 @@ function extractCurrencyValue(str) {
 }
 
 console.log(extractCurrencyValue('$120'));
-//нужно разобрать
+//либо в одну строку: parseInt(num.match(/\d+/))
