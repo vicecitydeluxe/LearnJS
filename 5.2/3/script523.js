@@ -14,11 +14,12 @@
 function readNumber() {
   while (true) {
     let num = prompt('Введите число', '');
-    if (num === '' || num === null) {
+    if (num === '' || num === null) { // if (!num) {}
       return null;
     }
     num = parseFloat(num);
-    if (typeof num === 'number' && !isNaN(num)) {
+    if (typeof num === 'number' && !isNaN(num)) { // isNan - лишнее, это просто доп проверка равная typeof
+      
       return num;
     }
   }

@@ -11,4 +11,13 @@ truncate("Вот, что мне хотелось бы сказать на эту
 truncate("Всем привет!", 20) = "Всем привет!"
 */
 
-//нужно разобрать, решения нет
+function truncate(str, maxLenght) {
+  if (str.length > maxLenght) {
+  return str.substr(0, maxLenght) + '…';
+  }
+  
+  return str;
+  }
+  
+  console.log(truncate('aaaafffffffff11111111111111f', 14)); //
+  
